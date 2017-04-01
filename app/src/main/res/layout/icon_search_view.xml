@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pzj.iconsearchview.widget.MinWidthLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    >
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_sv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:id="@+id/icon_container_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/search_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:id="@+id/search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            android:src="@mipmap/icon_search"
+            />
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/search"
+            android:maxLines="1"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/search_text_color"
+            android:textColorHint="@color/search_text_hint_color"
+            android:textSize="@dimen/search_text_size"
+            />
+    </LinearLayout>
+
+</com.pzj.iconsearchview.widget.MinWidthLinearLayout>
